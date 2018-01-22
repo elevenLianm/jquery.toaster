@@ -1,6 +1,7 @@
 /***********************************************************************************
 * Add Array.indexOf                                                                *
 ***********************************************************************************/
+'use strict';
 (function ()
 {
 	if (typeof Array.prototype.indexOf !== 'function')
@@ -26,7 +27,7 @@
 	}
 })();
 /**********************************************************************************/
-
+var settings;
 (function ($,undefined)
 {
 	var toasting =
@@ -149,8 +150,7 @@
 		'stylesheet'   : null,
 		'donotdismiss' : []
 	};
-
-	var settings = {};
+	settings = {};
 	$.extend(settings, defaults);
 
 	$.toaster = function (options)
